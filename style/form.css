@@ -3,13 +3,22 @@ padding: 20px;
 }
 
 .form__input {
-    text-align: left;
-    padding: 10px 0;
+    padding: 10px 10px;
     max-width: 600px;
     width: 100%;
 }
 
 .form__button {
     padding: 10px 10px;
-    margin-left: 10px;
+    margin: 0 10px;
+    color: white;
+    background-color: teal;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
 }
