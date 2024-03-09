@@ -30,6 +30,7 @@
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
+
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
                 removeTask(index);
@@ -43,7 +44,7 @@
                 toggleTaskDone(index);
             });
         });
-    };
+    }
 
     const render = () => {
         let htmlString = "";
@@ -66,19 +67,18 @@
 
     };
 
-    const onFormSubmit = () => {
-        (event) => {
-            event.preventDefault();
+    const onFormSubmit = (event) => { 
+        event.preventDefault();
 
             const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
             if (newTaskContent === "") {
                 return;
-            };
+            }
 
             addNewTask(newTaskContent);
         };
-    }
+    
 
     const init = () => {
         render();
