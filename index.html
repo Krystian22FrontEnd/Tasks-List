@@ -8,9 +8,22 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
 <link href="style/style.css" rel="stylesheet">
+<link href="style/container.css" rel="stylesheet">
     <title>Lista Zadań</title>
 </head>
 <body>
-    
+    <main class="container">
+        <h1>Lista zadań</h1>
+        <section class="section">
+            <h2>Dodaj nowe zadanie</h2>
+            <form class="js-form">
+                <input name="js-newTask" placeholder="Co jest do zrobienia?">
+            </form>
+        </section>
+        <section class="section">
+            <h2>Lista zadań</h2>
+            <ul class="js-tasks"></ul>
+        </section>
+    </main>
 </body>
 </html>
