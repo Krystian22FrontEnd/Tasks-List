@@ -10,16 +10,26 @@ html {
 
 body {
     font-family: "Lato", sans-serif;
+    background-color: hsl(0, 0%, 90%);
 }
 
 .section {
     background-color: white;
     border: 1px solid #ddd;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .section__header {
     border-bottom: 1px solid #ddd;
     padding: 10px 10px;
     margin: 0;
+}
+
+.list__item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.list__item--done {
+    text-decoration: line-through;
 }
