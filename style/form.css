@@ -1,5 +1,8 @@
 .form {
-padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    flex-wrap: wrap;
 }
 
 .form__input {
@@ -10,7 +13,6 @@ padding: 20px;
 
 .form__button {
     padding: 10px 10px;
-    margin: 0 10px;
     color: white;
     background-color: teal;
 }
