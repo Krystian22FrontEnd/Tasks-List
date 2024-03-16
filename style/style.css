@@ -11,25 +11,54 @@ html {
 body {
     font-family: "Lato", sans-serif;
     background-color: hsl(0, 0%, 90%);
+    word-break: break-word;
 }
 
-.section {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 5px 0;
-}
-
-.section__header {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 10px;
-    margin: 0;
+.flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .list__item {
     border-bottom: 1px solid #ddd;
     padding: 20px 0;
+    margin-right: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flexContent {
+    flex-basis: 90%;
+    align-self: center;
+    text-decoration: line-through;
 }
 
 .list__item--done {
     text-decoration: line-through;
+}
+
+.task__button {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.task__button--done {
+    background-color: hsl(120, 93%, 35%);
+}
+
+.task__button--done:hover {
+    background-color: hsl(120, 93%, 40%);
+}
+
+.task__button--remove {
+    background-color: hsl(0, 98%, 45%);
+}
+
+.task__button--remove:hover {
+    background-color: hsl(0, 100%, 55%);
 }
