@@ -1,16 +1,32 @@
-.flex {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-}
+@media(max-width: 768px) {
 
-.flex-button {
-    margin: 5px 0;
-}
-
-@media(max-width: 800px) {
-    .flex-button {
+    .form__button {
+        flex-grow: 1;
         max-width: 600px;
         width: 100%;
+        margin-top: 5px;
+    }
+
+    .task__button {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+        flex-shrink: 0;
+    }
+
+    .form {
+        padding: 20px 20px;
+    }
+
+    .section {
+        margin: 0 10px;
+    }
+
+    .section__header {
+        padding: 20px 20px;
+    }
+
+    .header {
+        padding: 10px 10px;
     }
 }
