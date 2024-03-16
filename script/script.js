@@ -5,15 +5,20 @@
             done: false,
         },
         {
-            content: "zjeść pierogi",
+            content: "zrobić trening",
             done: true,
         },
     ];
 
+
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
+            
         });
+        const input = document.querySelector(".form__input")
+        input.value = "";
 
         render();
     };
@@ -38,7 +43,7 @@
         });
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
-        
+
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
@@ -51,12 +56,10 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li 
-            class="list__item ${task.done ? " list__item--done" : ""}"
-            >
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
-            ${task.content}
+            <li class="list__item ${task.done ? " list__item--done " : ""}">
+            <button class="js-done flexButton task__button task__button--done">${task.done ? "✔️" : ""}</button>
+            <span class= "flexContent">${task.content}</span>
+            <button class="js-remove task__button task__button--remove">🗑️</button>
             </li>
             `;
         }
@@ -67,21 +70,27 @@
 
     };
 
-    const onFormSubmit = (event) => { 
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
-            const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
-            if (newTaskContent === "") {
-                return;
-            }
+        if (newTaskContent === "") {
+            return;
+        }
 
-            addNewTask(newTaskContent);
-        };
-    
+        addNewTask(newTaskContent);
+    };
+
 
     const init = () => {
         render();
+
+        const input = document.querySelector(".form__input")
+        const addTaskButton = document.querySelector(".form__button")
+        addTaskButton.addEventListener("click", () => {
+            input.focus();
+        });
 
         const form = document.querySelector(".js-form");
 
