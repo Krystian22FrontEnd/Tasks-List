@@ -22,17 +22,20 @@ body {
 .list__item {
     border-bottom: 1px solid #ddd;
     padding: 20px 0;
-    margin-right: 40px;
+    margin: 0 40px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 
 }
 
+.js-tasks {
+    padding: 10px 0;
+}
+
 .flexContent {
     flex-basis: 90%;
     align-self: center;
-    text-decoration: line-through;
 }
 
 .list__item--done {
@@ -40,8 +43,8 @@ body {
 }
 
 .task__button {
-    width: 30px;
-    height: 30px;
+    flex-basis: 35px;
+    height: 35px;
     margin: 0 10px;
     flex-shrink: 0;
     border: none;
