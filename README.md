@@ -17,3 +17,4 @@ Simple yet very usefull task-list for everyone who wants to have control over th
 - CSS
 - HTML
 - Flex
+- Media Queries
