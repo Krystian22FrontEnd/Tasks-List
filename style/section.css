@@ -3,10 +3,38 @@
     border: 1px solid #ddd;
     margin: 5px 0;
     box-shadow: 3px -3px 10px 1px hsl(0deg 2.77% 80%);
+    display: grid;
+}
+
+.section__title {
+    padding: 20px 25px;
+    margin: 0;
 }
 
 .section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
     border-bottom: 1px solid #ddd;
-    padding: 20px 25px;
-    margin: 0;
+}
+
+.section__button {
+    border: none;
+    color: hsl(180, 100%, 25%);
+    background-color: white;
+    margin-top: 3px;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__button:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button:disabled {
+    color: gray;
 }
