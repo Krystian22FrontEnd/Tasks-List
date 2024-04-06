@@ -1,0 +1,34 @@
+.flexButton {
+    flex-basis: 90%;
+    align-self: center;
+}
+
+.task__button {
+    flex-basis: 35px;
+    height: 35px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    border: none;
+    transition: 0.3s;
+}
+
+.task__button--done {
+    background-color: hsl(120, 93%, 35%);
+}
+
+.task__button--done:hover {
+    background-color: hsl(120, 93%, 40%);
+}
+
+.task__button--remove {
+    background-color: hsl(0, 98%, 45%);
+}
+
+.task__button--remove:hover {
+    background-color: hsl(0, 100%, 55%);
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+}
