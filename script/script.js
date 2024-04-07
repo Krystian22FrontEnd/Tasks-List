@@ -51,16 +51,16 @@
 
     for (const task of tasks) {
       htmlString += `
-        <li class="list__item  
-        ${task.done && hideDoneTask ? "list__item--hidden" : ""}">
+      <li class="list__item  
+          ${task.done && hideDoneTask ? "list__item--hidden" : ""}">
         <button class="js-done task__button task__button--done">
-        ${task.done ? "✔️" : ""}
+          ${task.done ? "✔️" : ""}
         </button>
         <span class= "flexButton${task.done ? " list__item--done " : ""}">
-        ${task.content}
+          ${task.content}
         </span>
         <button class="js-remove task__button task__button--remove">🗑️</button>
-        </li>
+      </li>
               `;
     }
 
@@ -90,12 +90,12 @@
     } else {
       taskHtmlButton += `
       <button 
-       class= "section__button js-toggleHideDoneTask">
-      ${hideDoneTask ? "Pokaż ukończone" : "Ukryj ukończone"}
+        class= "section__button js-toggleHideDoneTask">
+          ${hideDoneTask ? "Pokaż ukończone" : "Ukryj ukończone"}
       </button>
       <button
-       class= "section__button js-markAllDone"
-      ${tasks.every(({ done }) => done) ? "disabled" : ""}
+        class= "section__button js-markAllDone"
+         ${tasks.every(({ done }) => done) ? "disabled" : ""}
       >
         Ukończ wszystkie
       </button>
