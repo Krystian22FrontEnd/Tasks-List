@@ -27,10 +27,6 @@ body {
     display: none;
 }
 
-.js-tasks {
-    padding: 10px 0;
-}
-
 .list__item--done {
     text-decoration: line-through;
 }
