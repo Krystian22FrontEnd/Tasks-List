@@ -3,6 +3,11 @@
     align-self: center;
 }
 
+.button {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .task__button {
     flex-basis: 35px;
     height: 35px;
@@ -10,6 +15,10 @@
     flex-shrink: 0;
     border: none;
     transition: 0.3s;
+}
+
+.tasks {
+    padding: 10px 0;
 }
 
 .task__button--done {
@@ -26,9 +35,4 @@
 
 .task__button--remove:hover {
     background-color: hsl(0, 100%, 55%);
-}
-
-.button {
-    display: flex;
-    flex-wrap: wrap;
 }
